@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vertex Industrial Build
 
-## Getting Started
+Premium landing page for a fictional international warehouse design and construction company. Built for design demonstration purposes.
 
-First, run the development server:
+## Tech stack
+
+- Next.js (App Router) + TypeScript
+- Tailwind CSS v4
+- shadcn/ui
+- Lucide React
+- Motion (`motion/react`)
+- React Hook Form + Zod + Sonner
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # development server
+npm run build    # production build
+npm run start    # serve production build
+npm run lint     # ESLint
+npx tsc --noEmit # TypeScript check
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/
+  layout.tsx          # fonts, SEO metadata, skip link, toaster, JSON-LD
+  page.tsx            # assembles all landing sections
+  globals.css         # brand tokens + industrial utilities
+components/
+  landing/            # all page sections and shared motion helpers
+  ui/                 # shadcn primitives
+data/                 # typed static content (projects, FAQs, etc.)
+types/industrial.ts   # shared interfaces
+lib/validation.ts     # Zod schemas for inquiry forms
+lib/utils.ts          # cn helper
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Where to edit content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Content | Location |
+|---------|----------|
+| Company info / nav | `data/company.ts` |
+| Capabilities | `data/capabilities.ts` |
+| Industries | `data/industries.ts` |
+| Projects / images | `data/projects.ts` |
+| Warehouse types | `data/warehouse-types.ts` |
+| Testimonials | `data/testimonials.ts` |
+| Markets | `data/markets.ts` |
+| Insights | `data/insights.ts` |
+| FAQs | `data/faqs.ts` |
 
-## Deploy on Vercel
+## Images
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Remote Unsplash images are configured in `next.config.ts` under `images.remotePatterns`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Replace image URLs in:
+
+- `components/landing/hero-section.tsx` (hero)
+- `data/projects.ts`
+- `data/warehouse-types.ts`
+- `data/insights.ts`
+- `components/landing/design-build-section.tsx`
+- `components/landing/final-cta.tsx`
+
+Prefer local assets in `/public` for production.
+
+## Connecting real APIs
+
+Forms currently simulate submission and show a toast.
+
+- Hero inquiry: `components/landing/project-inquiry-card.tsx`
+- Contact inquiry: `components/landing/project-form.tsx`
+
+Replace the simulated `await new Promise(...)` blocks with `fetch` calls to your backend (e.g. `/api/project-inquiry`).
+
+Suggested environment variables:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+PROJECT_INQUIRY_WEBHOOK_URL=
+CRM_API_KEY=
+```
+
+See `.env.example`.
+
+## Disclaimer
+
+Vertex Industrial Build is a fictional company created for website design demonstration purposes. Statistics and testimonials are demo content.
