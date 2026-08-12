@@ -12,9 +12,9 @@ export function WarehouseTypes() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Facility Types"
-            title="Industrial Facilities We Build"
-            description="From small-bay flex space to large-scale fulfillment and cold storage, we deliver facilities aligned with operational requirements and long-term asset strategy."
+            eyebrow="Product Types"
+            title="Industrial & Flex Product We Specialize In"
+            description="From shallow bay flex suites to showroom-frontage parks and multi-tenant business parks — we focus exclusively on small bay industrial assets nationwide."
           />
         </Reveal>
 

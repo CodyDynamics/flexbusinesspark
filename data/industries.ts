@@ -2,45 +2,45 @@ import type { Industry } from "@/types/industrial";
 
 export const industries: Industry[] = [
   {
-    id: "logistics",
-    name: "Logistics & 3PL",
+    id: "investors",
+    name: "Private Investors",
     description:
-      "Efficient facilities designed for high-throughput receiving, storage, picking, and shipping.",
-    icon: "Truck",
+      "Targeted exposure to high-demand shallow bay industrial with stronger pricing and long-term asset performance.",
+    icon: "TrendingUp",
   },
   {
-    id: "ecommerce",
-    name: "E-Commerce",
+    id: "developers",
+    name: "Developers",
     description:
-      "High-volume fulfillment centers engineered for automation, rapid order processing, and scalable operations.",
-    icon: "Boxes",
+      "Site selection, feasibility, design strategy, and go-to-market support for flex parks built to lease or sell as condos.",
+    icon: "HardHat",
   },
   {
-    id: "manufacturing",
-    name: "Manufacturing",
+    id: "owner-users",
+    name: "Owner-Users",
     description:
-      "Facilities designed around production lines, equipment loads, inventory flow, and workforce needs.",
-    icon: "Factory",
-  },
-  {
-    id: "cold-chain",
-    name: "Food & Cold Chain",
-    description:
-      "Temperature-controlled facilities built for food storage, processing, and distribution.",
-    icon: "Snowflake",
-  },
-  {
-    id: "retail",
-    name: "Retail Distribution",
-    description:
-      "Regional and national distribution facilities optimized for store replenishment and inventory management.",
+      "Guidance for businesses seeking small bay warehouse and flex space assets that fit operational needs.",
     icon: "Building2",
   },
   {
-    id: "industrial-re",
-    name: "Industrial Real Estate",
+    id: "institutions",
+    name: "Institutional Capital",
     description:
-      "Speculative and build-to-suit industrial developments designed for long-term asset performance.",
-    icon: "TrendingUp",
+      "Acquisition and disposition execution supported by proprietary buyer networks and market pricing intelligence.",
+    icon: "Globe2",
+  },
+  {
+    id: "landlords",
+    name: "Property Owners",
+    description:
+      "Disposition strategy and leasing support designed to maximize value for multi-tenant flex industrial assets.",
+    icon: "Warehouse",
+  },
+  {
+    id: "tenants",
+    name: "Local & National Tenants",
+    description:
+      "Matching contractors, service businesses, showroom users, and light industrial tenants with the right suite product.",
+    icon: "Truck",
   },
 ];

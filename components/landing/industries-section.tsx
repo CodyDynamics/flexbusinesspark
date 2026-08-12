@@ -2,9 +2,12 @@ import {
   Boxes,
   Building2,
   Factory,
+  Globe2,
+  HardHat,
   Snowflake,
   TrendingUp,
   Truck,
+  Warehouse,
   type LucideIcon,
 } from "lucide-react";
 import { Reveal } from "@/components/landing/reveal";
@@ -19,6 +22,9 @@ const iconMap: Record<string, LucideIcon> = {
   Snowflake,
   Building2,
   TrendingUp,
+  HardHat,
+  Globe2,
+  Warehouse,
 };
 
 export function IndustriesSection() {
@@ -27,9 +33,9 @@ export function IndustriesSection() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Industries"
-            title="Built Around the Needs of Modern Supply Chains"
-            description="We design and construct industrial facilities tailored to the operational demands of logistics, manufacturing, retail, and cold-chain businesses."
+            eyebrow="Who We Serve"
+            title="Built for Investors, Developers & Owner-Users"
+            description="We advise private investors, developers, owner-users, institutions, landlords, and tenants investing in or occupying small-bay flex industrial assets."
           />
         </Reveal>
 

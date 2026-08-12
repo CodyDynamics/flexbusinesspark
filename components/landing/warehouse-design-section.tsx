@@ -1,12 +1,12 @@
 import {
-  ArrowUpFromLine,
-  Columns3,
+  Building2,
   DoorOpen,
-  Expand,
-  Flame,
   Layers,
-  Lightbulb,
-  Truck,
+  LayoutGrid,
+  MapPin,
+  Palette,
+  Scale,
+  Users,
 } from "lucide-react";
 import { Reveal } from "@/components/landing/reveal";
 import { SectionHeading } from "@/components/landing/section-heading";
@@ -14,60 +14,60 @@ import { cn } from "@/lib/utils";
 
 const designConsiderations = [
   {
-    title: "Clear Height",
-    detail: "Typical range: 24–40+ ft",
+    title: "Site Demographics",
+    detail: "Demand, income, and trade-area fundamentals",
     description:
-      "Building height directly impacts pallet capacity, racking strategy, and automation potential.",
-    icon: ArrowUpFromLine,
+      "Evaluate local contractor density, service business growth, and tenant demand drivers before committing to a site.",
+    icon: MapPin,
   },
   {
-    title: "Column Spacing",
-    detail: "Designed around racking, equipment, and automation",
+    title: "Suite Sizing",
+    detail: "Shallow bay and flex suite mix",
     description:
-      "Structural grids are planned to support storage density and material handling workflows.",
-    icon: Columns3,
+      "Right-size suites for contractor, showroom, and light industrial users to maximize absorption and rental growth.",
+    icon: LayoutGrid,
   },
   {
-    title: "Dock Configuration",
-    detail: "Dock-high, drive-in, and cross-dock layouts",
+    title: "Showroom Frontage",
+    detail: "Street visibility and brand presence",
     description:
-      "Receiving and shipping strategies influence door count, dock positions, and building orientation.",
-    icon: DoorOpen,
+      "Frontage and glazing strategy that supports showroom tenants and differentiates the park from commodity warehouse product.",
+    icon: Building2,
   },
   {
-    title: "Truck Courts",
-    detail: "Maneuverability, staging, and safety",
+    title: "Side Storage Yards",
+    detail: "Outdoor storage and operational flexibility",
     description:
-      "Site circulation is engineered for semi-trailer access, trailer storage, and efficient yard operations.",
-    icon: Truck,
-  },
-  {
-    title: "Floor Load",
-    detail: "Storage systems, equipment, and operational loads",
-    description:
-      "Slab design accounts for rack loads, forklift traffic, and future automation requirements.",
+      "Plan side yards and paved storage areas that meet tenant operational needs and support premium rents.",
     icon: Layers,
   },
   {
-    title: "Fire Protection",
-    detail: "ESFR systems, local codes, and storage type",
+    title: "Freestanding Docks",
+    detail: "Loading access without sacrificing frontage",
     description:
-      "Sprinkler and life-safety planning aligns with commodity classification and ceiling heights.",
-    icon: Flame,
+      "Position freestanding dock configurations that preserve showroom frontage while supporting warehouse functionality.",
+    icon: DoorOpen,
   },
   {
-    title: "Lighting",
-    detail: "Energy efficiency and visibility",
+    title: "Lease vs Condo",
+    detail: "Hold, sell, or hybrid exit strategy",
     description:
-      "Modern LED high-bay systems support safe operations while reducing long-term energy costs.",
-    icon: Lightbulb,
+      "Align park design and marketing with whether the asset will be leased, sold as condominiums, or held for investment.",
+    icon: Scale,
   },
   {
-    title: "Future Expansion",
-    detail: "Facility growth and automation readiness",
+    title: "Tenant Mix",
+    detail: "Complementary users and income stability",
     description:
-      "Master planning allows for additional docks, building expansion, and evolving operational needs.",
-    icon: Expand,
+      "Curate a tenant roster that balances contractor, service, showroom, and light industrial demand for stable occupancy.",
+    icon: Users,
+  },
+  {
+    title: "Brand Differentiation",
+    detail: "Amenities, signage, and park identity",
+    description:
+      "Create a recognizable park brand through amenities, landscaping, and marketing that commands waiting lists and premium pricing.",
+    icon: Palette,
   },
 ] as const;
 
@@ -77,9 +77,9 @@ export function WarehouseDesignSection() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Warehouse Engineering"
-            title="Engineered Around Operational Performance"
-            description="Warehouse construction is not only about building size. Performance-driven facilities require deliberate planning across structure, circulation, systems, and future growth."
+            eyebrow="360 Advantage"
+            title="Park Design Considerations That Drive Performance"
+            description="Successful flex parks require deliberate planning across demographics, suite mix, frontage, storage, loading, exit strategy, tenant composition, and brand positioning."
           />
         </Reveal>
 

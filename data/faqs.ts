@@ -2,75 +2,75 @@ import type { FaqItem } from "@/types/industrial";
 
 export const faqs: FaqItem[] = [
   {
-    id: "timeline",
-    question: "How long does it take to build a warehouse?",
+    id: "what-is-flex",
+    question: "What is small bay industrial / flex space?",
     answer:
-      "Timelines vary by project scope, site readiness, permitting, building size, and specialty systems. A straightforward ground-up warehouse may take several months from groundbreaking to substantial completion, while complex build-to-suit, manufacturing, or cold storage projects typically require longer design, procurement, and construction periods. During discovery, we develop a realistic schedule based on your site, scope, and operational target date.",
+      "Small bay industrial (also called flex space or shallow bay industrial) is multi-tenant warehouse product typically designed for contractors, service businesses, showroom users, and light industrial tenants. Flex Business Parks specializes exclusively in this asset class nationwide.",
   },
   {
-    id: "cost",
-    question: "How much does warehouse construction cost per square foot?",
+    id: "services",
+    question: "What services does Flex Business Parks provide?",
     answer:
-      "There is no single fixed cost per square foot for industrial construction. Pricing depends on location, site conditions, building size, structural systems, clear height, MEP requirements, fire protection, material costs, labor markets, and schedule. Specialty facilities such as cold storage or manufacturing environments typically require higher investment than speculative dry warehouse product. We provide project-specific budgeting during preconstruction rather than generalized unit pricing.",
+      "We provide brokerage, investment sales, site selection, leasing, and development advisory for small-bay flex industrial properties. Our platform also includes Small Bay Feasibility analysis and our proprietary World Engine site evaluation tool.",
   },
   {
-    id: "design-build",
-    question: "What is design-build construction?",
+    id: "360",
+    question: "What is the 360 Advantage?",
     answer:
-      "Design-build is an integrated delivery method in which design and construction are aligned under a coordinated team. This approach supports earlier cost certainty, constructability reviews, and clearer accountability compared with fully separated design and bid processes. For industrial facilities, design-build can help align operational requirements with schedule and budget from the earliest stages.",
+      "The 360 Advantage is our end-to-end approach: select the right location and demographics, design the park for lease or condominium sales, then support leasing and strategic positioning for long-term investment or disposition.",
   },
   {
-    id: "size",
-    question: "What warehouse size should my company build?",
+    id: "world-engine",
+    question: "What is World Engine?",
     answer:
-      "Facility size should be driven by inventory profile, throughput, automation plans, dock requirements, labor model, and growth strategy—not by a generic building template. We help clients evaluate current demand, peak season requirements, and expansion options so the facility supports operations without overbuilding unnecessary area.",
+      "World Engine is a proprietary Flex Parks USA tool used nationwide to quickly evaluate land sites for small bay industrial development. It helps identify demand, competition, and pricing fundamentals before deeper feasibility work begins.",
+  },
+  {
+    id: "buy-sell",
+    question: "Can you help me buy or sell a flex park?",
+    answer:
+      "Yes. Our investment sales platform specializes in acquisitions, dispositions, and 1031 exchange transactions for private investors, developers, and institutional capital across the small-bay sector.",
+  },
+  {
+    id: "leasing",
+    question: "Do you handle leasing for multi-tenant flex parks?",
+    answer:
+      "Yes. Our leasing team focuses on occupancy and rental growth, matching the right suite sizes and market positioning to attract local and national tenants.",
+  },
+  {
+    id: "condo-vs-lease",
+    question: "Should I build to lease or sell as condominiums?",
+    answer:
+      "Condo sales can provide a faster and potentially higher return in the right demographics, while leasing supports longer-term investment strategies. We help evaluate submarket trends, tenant demand, and exit strategy before you commit.",
   },
   {
     id: "site-selection",
     question: "Can you help with industrial site selection?",
     answer:
-      "Yes. We evaluate industrial sites from both development and operational perspectives, including highway access, labor availability, utilities, zoning, truck circulation, parcel configuration, distribution reach, incentives, land cost, and expansion potential.",
+      "Yes. Through Small Bay Feasibility and World Engine, we evaluate demographics, rent comps, absorption, supply pipelines, and build economics to determine whether a site should move forward — and how it should be positioned.",
   },
   {
-    id: "outside-texas",
-    question: "Do you build warehouses outside Texas?",
+    id: "markets",
+    question: "Where do you work?",
     answer:
-      "Yes. While we are headquartered in Dallas, Texas, we evaluate and deliver industrial projects across high-growth U.S. markets. Nationwide opportunities are considered based on project scope, timing, and delivery requirements.",
+      "We work with small bay industrial and flex space properties across the United States, with deep experience in Texas and other high-growth markets.",
   },
   {
-    id: "build-to-suit",
-    question: "What is a build-to-suit warehouse?",
+    id: "book",
+    question: "What is Flex Space Domination?",
     answer:
-      "A build-to-suit warehouse is a purpose-built facility designed around a specific user’s operational requirements, equipment, workflow, and growth plans. It differs from speculative product by prioritizing process fit, specialized systems, and long-term performance for the intended occupant.",
+      "Flex Space Domination is a book on small-bay flex investing co-authored by Cody Payne. It is available on Amazon for investors and developers focused on this asset class.",
   },
   {
-    id: "clear-height",
-    question: "What clear height should a warehouse have?",
+    id: "listings",
+    question: "How do I get current and future listings?",
     answer:
-      "Clear height depends on storage strategy, racking systems, automation, and product profile. Many modern distribution facilities target 32 to 40 feet or higher, while other uses may be well served by lower clear heights. The right decision balances cube utilization, capital cost, equipment strategy, and future flexibility.",
+      "Contact our team for current and future listing opportunities, or join our mailing list for newsletter updates and future opportunities.",
   },
   {
-    id: "expansion",
-    question: "Can an existing warehouse be expanded?",
+    id: "start",
+    question: "What information do you need to get started?",
     answer:
-      "In many cases, yes. Expansion feasibility depends on site area, zoning, utilities, structural systems, dock capacity, and operational continuity requirements. We evaluate expansion and renovation strategies that increase capacity while minimizing disruption to active operations.",
-  },
-  {
-    id: "cold-storage",
-    question: "Do you build cold storage facilities?",
-    answer:
-      "Yes. We design and construct temperature-controlled industrial facilities for food distribution, pharmaceutical logistics, and broader cold-chain operations, including considerations for insulated envelopes, refrigeration systems, and specialized dock conditions.",
-  },
-  {
-    id: "automation",
-    question: "Can you design facilities for warehouse automation?",
-    answer:
-      "Yes. When automation is part of the operating plan, we coordinate early around slab performance, column spacing, clear height, power, data infrastructure, and process flow so the building supports current and future automation strategies.",
-  },
-  {
-    id: "start-info",
-    question: "What information is required to start a project?",
-    answer:
-      "Helpful starting information includes target market or site location, facility type, approximate square footage, operational requirements, timeline, budget range, and any known constraints related to equipment, automation, or expansion. Our team can begin with a consultation even if some details are still being defined.",
+      "Share your name, email, phone, and whether you are looking to buy, sell, develop, lease, or evaluate a site. Our team can follow up with relevant opportunities and next steps.",
   },
 ];

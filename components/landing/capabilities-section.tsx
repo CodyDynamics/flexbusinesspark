@@ -9,9 +9,9 @@ export function CapabilitiesSection() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Our Capabilities"
-            title="Complete Industrial Development Solutions"
-            description="We bring planning, engineering, construction, and operational thinking together to create facilities built for efficiency and long-term performance."
+            eyebrow="Our Services"
+            title="Small Bay Industrial Expertise Nationwide"
+            description="Brokerage, investment sales, site selection, leasing, and development advisory — exclusively focused on small-bay flex industrial real estate."
           />
         </Reveal>
 

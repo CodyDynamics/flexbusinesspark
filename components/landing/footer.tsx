@@ -4,29 +4,36 @@ import { COMPANY } from "@/data/company";
 import { cn } from "@/lib/utils";
 
 const footerLinks = {
-  capabilities: [
-    { label: "Warehouse Construction", href: "#capabilities" },
-    { label: "Design-Build", href: "#capabilities" },
-    { label: "Build-to-Suit", href: "#capabilities" },
-    { label: "Industrial Development", href: "#capabilities" },
-    { label: "Site Planning", href: "#capabilities" },
-    { label: "Renovation", href: "#capabilities" },
+  services: [
+    { label: "Investment Sales", href: "#capabilities" },
+    { label: "Brokerage", href: "#capabilities" },
+    { label: "Site Analysis", href: "#world-engine" },
+    { label: "Leasing", href: "#capabilities" },
+    { label: "Development Advisory", href: "#capabilities" },
+    { label: "1031 Exchange Support", href: "#capabilities" },
   ],
-  industries: [
-    { label: "Logistics", href: "#industries" },
-    { label: "E-Commerce", href: "#industries" },
-    { label: "Manufacturing", href: "#industries" },
-    { label: "Cold Storage", href: "#industries" },
-    { label: "Retail Distribution", href: "#industries" },
+  platform: [
+    { label: "360 Advantage", href: "#process" },
+    { label: "World Engine", href: "#world-engine" },
+    { label: "Small Bay Feasibility", href: "#world-engine" },
+    { label: "Market Record Pricing", href: "#about" },
+    { label: "Get Listings", href: "#contact" },
   ],
   company: [
     { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Insights", href: "#insights" },
-    { label: "Careers", href: "#contact" },
+    { label: "Transactions", href: "#projects" },
+    { label: "Knowledge Center", href: "#insights" },
     { label: "Contact", href: "#contact" },
   ],
 } as const;
+
+const socialLinks = [
+  { label: "LinkedIn", href: COMPANY.linkedin },
+  { label: "Facebook", href: COMPANY.facebook },
+  { label: "Instagram", href: COMPANY.instagram },
+  { label: "YouTube", href: COMPANY.youtube },
+  { label: "X", href: COMPANY.x },
+] as const;
 
 const legalLinks = [
   { label: "Privacy Policy", href: "#" },
@@ -59,20 +66,6 @@ function FooterColumn({
         ))}
       </ul>
     </div>
-  );
-}
-
-function LinkedInIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden
-    >
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-    </svg>
   );
 }
 
@@ -128,22 +121,38 @@ export function Footer() {
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
               {COMPANY.tagline}
             </p>
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/60">
+              {COMPANY.secondaryTagline}
+            </p>
             <a
-              href={COMPANY.linkedin}
+              href={COMPANY.bookUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={cn(
-                "mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/75",
-                "transition-colors hover:text-industrial-orange"
-              )}
+              className="mt-4 inline-block text-sm font-medium text-industrial-orange transition-colors hover:text-industrial-orange/80"
             >
-              <LinkedInIcon className="size-4" />
-              LinkedIn
+              {COMPANY.bookTitle} →
             </a>
+            <ul className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
+              {socialLinks.map((social) => (
+                <li key={social.label}>
+                  <a
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      "text-sm font-medium text-white/75",
+                      "transition-colors hover:text-industrial-orange"
+                    )}
+                  >
+                    {social.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <FooterColumn title="Capabilities" links={footerLinks.capabilities} />
-          <FooterColumn title="Industries" links={footerLinks.industries} />
+          <FooterColumn title="Services" links={footerLinks.services} />
+          <FooterColumn title="Platform" links={footerLinks.platform} />
           <FooterColumn title="Company" links={footerLinks.company} />
 
           <div>
@@ -151,7 +160,7 @@ export function Footer() {
               Contact
             </h3>
             <ul className="mt-5 space-y-3 text-sm text-white/75">
-              <li>Dallas, TX</li>
+              <li>{COMPANY.cityState}</li>
               <li>
                 <a
                   href={COMPANY.phoneHref}
@@ -190,10 +199,6 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          <p className="mt-6 max-w-3xl text-xs leading-relaxed text-white/40">
-            {COMPANY.name} is a fictional company created for website design
-            demonstration purposes.
-          </p>
         </div>
       </div>
     </footer>

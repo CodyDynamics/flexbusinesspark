@@ -22,28 +22,30 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vertexindustrial.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://flexbusinessparks.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Warehouse Construction & Industrial Development | Vertex Industrial Build",
+  title:
+    "Small Bay Industrial & Flex Space | Flex Business Parks",
   description:
-    "Design-build warehouse construction, logistics facilities, distribution centers, manufacturing facilities, and industrial development services across the United States.",
+    "Flex Business Parks specializes exclusively in small bay industrial and flex space properties across the United States — brokerage, investment sales, site selection, leasing, and development advisory.",
   keywords: [
-    "warehouse construction",
-    "warehouse builders",
-    "industrial construction company",
-    "distribution center construction",
-    "logistics warehouse development",
-    "industrial design build",
-    "commercial warehouse construction",
-    "build to suit warehouse",
-    "warehouse development",
-    "industrial contractor",
+    "small bay industrial",
+    "flex space",
+    "flex industrial",
+    "shallow bay industrial",
+    "industrial brokerage",
+    "investment sales",
+    "site selection",
+    "flex parks",
+    "Flex Parks USA",
+    "small bay warehouse",
   ],
-  authors: [{ name: "Vertex Industrial Build" }],
-  creator: "Vertex Industrial Build",
-  publisher: "Vertex Industrial Build",
+  authors: [{ name: "Flex Business Parks" }],
+  creator: "Flex Parks USA",
+  publisher: "Flex Business Parks",
   alternates: {
     canonical: "/",
   },
@@ -51,24 +53,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Vertex Industrial Build",
-    title: "Warehouse Construction & Industrial Development | Vertex Industrial Build",
+    siteName: "Flex Business Parks",
+    title: "Small Bay Industrial & Flex Space | Flex Business Parks",
     description:
-      "Design-build warehouse construction, logistics facilities, distribution centers, manufacturing facilities, and industrial development services across the United States.",
+      "Brokerage, investment sales, site selection, and development advisory exclusively focused on small-bay flex industrial real estate nationwide.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Modern logistics warehouse exterior",
+        alt: "Small bay industrial flex business park",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Warehouse Construction & Industrial Development | Vertex Industrial Build",
+    title: "Small Bay Industrial & Flex Space | Flex Business Parks",
     description:
-      "Design-build warehouse construction, logistics facilities, distribution centers, and industrial development across the United States.",
+      "Nationwide small bay industrial and flex space brokerage, investment sales, and development advisory.",
     images: [
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
     ],

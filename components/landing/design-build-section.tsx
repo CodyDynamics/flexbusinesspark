@@ -5,12 +5,12 @@ import { SectionHeading } from "@/components/landing/section-heading";
 import { Button } from "@/components/ui/button";
 
 const benefits = [
-  "Earlier cost certainty",
-  "Faster project schedules",
-  "Fewer communication gaps",
-  "Constructability reviews",
-  "Value engineering",
-  "Better risk management",
+  "Park layout and suite mix strategy",
+  "Showroom frontage and amenity planning",
+  "Competitive cost benchmarking",
+  "Condo vs lease exit positioning",
+  "Marketing and brand differentiation",
+  "Design advisory before capital commitment",
 ] as const;
 
 export function DesignBuildSection() {
@@ -22,7 +22,7 @@ export function DesignBuildSection() {
             <div className="relative aspect-[4/3] overflow-hidden border border-industrial-gray bg-navy lg:aspect-[5/4]">
               <Image
                 src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80"
-                alt="Engineers reviewing warehouse construction plans at a project table"
+                alt="Advisors reviewing flex park design strategy and site plans"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -37,9 +37,9 @@ export function DesignBuildSection() {
 
           <Reveal delay={0.1}>
             <SectionHeading
-              eyebrow="Integrated Delivery"
-              title="One Team. One Plan. One Point of Accountability."
-              description="Our design-build approach aligns architects, engineers, estimators, and construction teams early in the process. The result is faster decision-making, better cost visibility, and fewer surprises during construction."
+              eyebrow="Design / Build Advisory"
+              title="Mission Critical — Before You Break Ground"
+              description="Our design and build advisory stage helps investors and developers validate park strategy, suite economics, and competitive positioning — advisory guidance, not general contractor delivery."
             />
 
             <ul className="mt-8 space-y-3">
@@ -60,9 +60,9 @@ export function DesignBuildSection() {
             <Button
               size="lg"
               className="mt-8 h-11 bg-navy px-6 text-white hover:bg-steel"
-              render={<a href="#contact" />}
+              render={<a href="#process" />}
             >
-              Learn About Design-Build
+              Learn About 360 Advantage
             </Button>
           </Reveal>
         </div>

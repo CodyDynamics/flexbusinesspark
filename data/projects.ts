@@ -2,113 +2,73 @@ import type { IndustrialProject } from "@/types/industrial";
 
 export const projects: IndustrialProject[] = [
   {
-    id: "dfw-logistics",
-    name: "DFW Logistics Center",
-    location: "Dallas–Fort Worth, Texas",
-    sizeSqFt: 420000,
-    type: "Regional Distribution Center",
+    id: "harmon",
+    name: "Harmon Industrial Park",
+    location: "Fort Worth, Texas",
+    sizeSqFt: 0,
+    type: "Flex / Industrial Business Park",
     image:
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80",
     description:
-      "A high-throughput regional distribution center engineered for cross-dock flow, trailer staging, and long-term expansion.",
-    features: [
-      "36-foot clear height",
-      "72 dock doors",
-      "ESFR sprinkler system",
-      "Trailer parking",
-      "185-foot truck court",
-    ],
+      "Recently closed flex / industrial business park transaction in the Fort Worth market.",
+    features: ["Small bay product", "Multi-tenant park", "DFW market", "Investment sale"],
     span: "wide",
   },
   {
-    id: "phoenix-fulfillment",
-    name: "Phoenix Fulfillment Campus",
-    location: "Phoenix, Arizona",
-    sizeSqFt: 650000,
-    type: "E-Commerce Fulfillment Center",
+    id: "dfw-corporate",
+    name: "DFW Corporate Park",
+    location: "Dallas–Fort Worth, Texas",
+    sizeSqFt: 0,
+    type: "Flex Corporate Park",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Corporate flex park positioned for shallow bay industrial demand across DFW.",
+    features: ["Flex suites", "Showroom potential", "Regional access", "Investor demand"],
+  },
+  {
+    id: "weatherby",
+    name: "Weatherby Business Park",
+    location: "Texas",
+    sizeSqFt: 0,
+    type: "Business Park",
     image:
       "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "A scalable e-commerce fulfillment campus designed for automation readiness and rapid outbound shipping capacity.",
-    features: [
-      "40-foot clear height",
-      "96 dock positions",
-      "Automation-ready slab",
-      "Employee parking campus",
-      "Future mezzanine capacity",
-    ],
+    description: "Sold business park representing continued demand for flex industrial assets.",
+    features: ["Sold", "Business park", "Texas market", "Investment sale"],
   },
   {
-    id: "southeast-cold",
-    name: "Southeast Cold Logistics Facility",
-    location: "Atlanta, Georgia",
-    sizeSqFt: 185000,
-    type: "Cold Storage",
+    id: "keller",
+    name: "Keller Flex Industrial Park",
+    location: "Keller, Texas",
+    sizeSqFt: 0,
+    type: "Flex / Industrial Park",
     image:
-      "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "A temperature-controlled logistics facility supporting refrigerated distribution and cold-chain inventory staging.",
-    features: [
-      "Multi-temp zones",
-      "Insulated dock seals",
-      "High-efficiency refrigeration",
-      "Food-grade finishes",
-      "Secure staging yards",
-    ],
-  },
-  {
-    id: "nevada-commerce",
-    name: "Nevada Commerce Park",
-    location: "Reno, Nevada",
-    sizeSqFt: 310000,
-    type: "Small-Bay Industrial Development",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
-    description:
-      "A multi-building small-bay industrial park designed for flexible tenancy and western U.S. distribution reach.",
-    features: [
-      "Multi-tenant bays",
-      "Drive-in and dock-high access",
-      "Flexible demising walls",
-      "Efficient site circulation",
-      "Phased development",
-    ],
+      "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=1600&q=80",
+    description: "Sold flex / industrial park in Keller, Texas.",
+    features: ["Sold", "Small bay", "North Texas", "Owner/investor sale"],
     span: "wide",
   },
   {
-    id: "gulf-coast-mfg",
-    name: "Gulf Coast Manufacturing Center",
-    location: "Houston, Texas",
-    sizeSqFt: 275000,
-    type: "Manufacturing Facility",
-    image:
-      "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "A manufacturing warehouse planned around equipment loads, utilities distribution, and production-to-shipping adjacency.",
-    features: [
-      "Heavy floor design",
-      "Enhanced power capacity",
-      "Crane-ready bays",
-      "Dedicated receiving docks",
-      "Office and plant adjacency",
-    ],
-  },
-  {
-    id: "florida-hub",
-    name: "Florida Distribution Hub",
-    location: "Orlando, Florida",
-    sizeSqFt: 390000,
-    type: "Retail Distribution",
+    id: "white-oak",
+    name: "White Oak Industrial Portfolio",
+    location: "Dallas–Fort Worth, Texas",
+    sizeSqFt: 0,
+    type: "Industrial Portfolio",
     image:
       "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "A retail distribution hub optimized for store replenishment cycles, inventory density, and regional outbound routing.",
-    features: [
-      "Cross-dock capable layout",
-      "High-cube storage",
-      "Expanded trailer storage",
-      "LED high-bay lighting",
-      "Future expansion pad",
-    ],
+    description: "Just closed multi-asset industrial portfolio transaction in DFW.",
+    features: ["Portfolio sale", "Just closed", "DFW", "Multi-building"],
+  },
+  {
+    id: "plano-showroom",
+    name: "Plano Flex Showroom Building",
+    location: "Plano, Texas",
+    sizeSqFt: 0,
+    type: "Flex Showroom",
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+    description: "Sold flex showroom building serving the Plano submarket.",
+    features: ["Showroom", "Flex industrial", "Sold", "North Texas"],
   },
 ];

@@ -1,32 +1,32 @@
 import { z } from "zod";
 
 export const facilitySizeOptions = [
-  "Under 25,000 sq ft",
+  "Under 10,000 sq ft",
+  "10,000–25,000 sq ft",
   "25,000–50,000 sq ft",
   "50,000–100,000 sq ft",
   "100,000–250,000 sq ft",
-  "250,000–500,000 sq ft",
-  "500,000+ sq ft",
+  "250,000+ sq ft / Portfolio",
 ] as const;
 
 export const projectTypeOptions = [
-  "Distribution Center",
-  "Logistics Warehouse",
-  "Small-Bay Industrial",
-  "Manufacturing Facility",
-  "Cold Storage",
-  "Build-to-Suit",
-  "Warehouse Expansion",
-  "Industrial Renovation",
+  "Buy Flex / Industrial",
+  "Sell Flex / Industrial",
+  "Development Advisory",
+  "Site Selection / Feasibility",
+  "Leasing",
+  "1031 Exchange",
+  "World Engine Analysis",
+  "Current Listings Request",
   "Other",
 ] as const;
 
 export const budgetOptions = [
-  "Under $5M",
+  "Under $2M",
+  "$2M–$5M",
   "$5M–$10M",
   "$10M–$25M",
-  "$25M–$50M",
-  "$50M+",
+  "$25M+",
   "Prefer not to say",
 ] as const;
 
@@ -44,22 +44,17 @@ const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/;
 export const heroInquirySchema = z.object({
   name: z.string().min(2, "Please enter your name"),
   company: z.string().min(2, "Company is required"),
-  email: z
-    .string()
-    .email("Enter a valid business email")
-    .refine((v) => !v.endsWith("@gmail.com") && !v.endsWith("@yahoo.com"), {
-      message: "Please use a business email address",
-    }),
+  email: z.string().email("Enter a valid email"),
   phone: z
     .string()
     .min(7, "Enter a valid phone number")
     .regex(phoneRegex, "Enter a valid phone number"),
-  location: z.string().min(2, "Project location is required"),
+  location: z.string().min(2, "Market or location is required"),
   facilitySize: z.enum(facilitySizeOptions, {
-    required_error: "Select an estimated facility size",
+    required_error: "Select an estimated size",
   }),
   projectType: z.enum(projectTypeOptions, {
-    required_error: "Select a project type",
+    required_error: "Select an inquiry type",
   }),
 });
 
@@ -70,30 +65,25 @@ export const projectInquirySchema = z.object({
   lastName: z.string().min(2, "Last name is required"),
   company: z.string().min(2, "Company is required"),
   jobTitle: z.string().min(2, "Job title is required"),
-  email: z
-    .string()
-    .email("Enter a valid business email")
-    .refine((v) => !v.endsWith("@gmail.com") && !v.endsWith("@yahoo.com"), {
-      message: "Please use a business email address",
-    }),
+  email: z.string().email("Enter a valid email"),
   phone: z
     .string()
     .min(7, "Enter a valid phone number")
     .regex(phoneRegex, "Enter a valid phone number"),
-  location: z.string().min(2, "Project location is required"),
+  location: z.string().min(2, "Market or location is required"),
   projectType: z.enum(projectTypeOptions, {
-    required_error: "Select a project type",
+    required_error: "Select an inquiry type",
   }),
   facilitySize: z.enum(facilitySizeOptions, {
-    required_error: "Select an estimated facility size",
+    required_error: "Select an estimated size",
   }),
   budget: z.enum(budgetOptions, {
     required_error: "Select an estimated budget",
   }),
   constructionStart: z.enum(constructionStartOptions, {
-    required_error: "Select a desired construction start",
+    required_error: "Select a timeline",
   }),
-  message: z.string().min(10, "Please share a brief project overview"),
+  message: z.string().min(10, "Please share a brief note about your inquiry"),
   consent: z.literal(true, {
     errorMap: () => ({
       message: "Consent is required to submit this inquiry",

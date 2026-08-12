@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/landing/reveal";
 import { SectionHeading } from "@/components/landing/section-heading";
 import { Badge } from "@/components/ui/badge";
+import { COMPANY } from "@/data/company";
 import { insights } from "@/data/insights";
 import { cn } from "@/lib/utils";
 
@@ -14,9 +15,9 @@ export function InsightsSection() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Knowledge"
-            title="Industrial Development Insights"
-            description="Practical guidance on facility planning, design strategy, and site evaluation for warehouse and logistics investments."
+            eyebrow="Knowledge Center"
+            title="Insights, Platform & Flex Space Domination"
+            description={`Explore the 360 Advantage platform, World Engine site selection, and ${COMPANY.bookTitle} — practical resources for small bay industrial investors and developers.`}
           />
         </Reveal>
 
@@ -65,8 +66,11 @@ export function InsightsSection() {
                   <Link
                     href={article.href}
                     className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-steel transition-colors duration-300 group-hover:text-industrial-orange"
+                    {...(article.href.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                   >
-                    Read Article
+                    {article.id === "flex-space-book" ? "View on Amazon" : "Read More"}
                     <ArrowRight
                       className="size-4 transition-transform duration-300 group-hover:translate-x-0.5"
                       aria-hidden

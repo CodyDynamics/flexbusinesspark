@@ -3,101 +3,101 @@ import type { WarehouseType } from "@/types/industrial";
 export const warehouseTypes: WarehouseType[] = [
   {
     id: "small-bay",
-    name: "Small-Bay Warehouse",
+    name: "Small Bay Industrial",
     description:
-      "Flexible bay configurations suited to growing operators, local distribution, and multi-tenant industrial parks.",
-    typicalUse: "Local logistics, light industrial, and multi-tenant occupancy",
-    typicalSize: "15,000–80,000 sq ft",
+      "Shallow bay industrial product designed for multi-tenant occupancy and flexible business use.",
+    typicalUse: "Contractors, service businesses, light industrial users",
+    typicalSize: "Small bay / shallow bay suites",
     image:
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80",
   },
   {
-    id: "bulk-distribution",
-    name: "Bulk Distribution",
+    id: "flex-space",
+    name: "Flex Space",
     description:
-      "Large-format warehouses designed for dense pallet storage, inbound volume, and outbound shipping efficiency.",
-    typicalUse: "Regional and national inventory distribution",
-    typicalSize: "200,000–800,000+ sq ft",
-    image:
-      "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "cross-dock",
-    name: "Cross-Dock Facility",
-    description:
-      "Streamlined facilities that move product rapidly from inbound to outbound docks with limited long-term storage.",
-    typicalUse: "Transfer hubs and time-sensitive freight handling",
-    typicalSize: "50,000–250,000 sq ft",
-    image:
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "last-mile",
-    name: "Last-Mile Distribution",
-    description:
-      "Urban and suburban facilities positioned for rapid customer delivery and dense route density.",
-    typicalUse: "Parcel sortation and last-mile delivery networks",
-    typicalSize: "30,000–150,000 sq ft",
-    image:
-      "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "fulfillment",
-    name: "Fulfillment Center",
-    description:
-      "High-throughput e-commerce facilities engineered for picking, packing, automation, and outbound capacity.",
-    typicalUse: "Direct-to-consumer order fulfillment",
-    typicalSize: "250,000–1,000,000+ sq ft",
-    image:
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "manufacturing-wh",
-    name: "Manufacturing Warehouse",
-    description:
-      "Hybrid production and storage environments planned for equipment, utilities, and finished-goods flow.",
-    typicalUse: "Production, staging, and shipping adjacency",
-    typicalSize: "75,000–400,000 sq ft",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "cold-storage",
-    name: "Cold Storage",
-    description:
-      "Temperature-controlled buildings designed for refrigerated and frozen product integrity.",
-    typicalUse: "Food, beverage, and pharmaceutical cold chain",
-    typicalSize: "50,000–300,000 sq ft",
-    image:
-      "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "build-to-suit",
-    name: "Build-to-Suit",
-    description:
-      "Custom facilities planned around a single operator’s process, equipment, and growth strategy.",
-    typicalUse: "Owner-user and long-term lease developments",
-    typicalSize: "Varies by requirement",
+      "Hybrid warehouse, office, and light industrial space built for evolving tenant needs.",
+    typicalUse: "Flexible multi-tenant occupancy",
+    typicalSize: "Suite-driven parks",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
   },
   {
-    id: "multi-tenant",
-    name: "Multi-Tenant Industrial",
+    id: "showroom",
+    name: "Showroom Flex",
     description:
-      "Divisible warehouse product designed for multiple tenants and flexible demising strategies.",
-    typicalUse: "Industrial parks and speculative development",
-    typicalSize: "100,000–500,000 sq ft total",
+      "Retail / showroom frontage combined with warehouse functionality to differentiate parks and support higher rents.",
+    typicalUse: "Showroom and service operators",
+    typicalSize: "Frontage-driven suites",
     image:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80",
   },
   {
-    id: "flex-industrial",
-    name: "Flex Industrial Space",
+    id: "condo-park",
+    name: "Industrial Condo Parks",
     description:
-      "Combined warehouse, office, and light industrial space for evolving business operations.",
-    typicalUse: "Service, assembly, and hybrid industrial use",
-    typicalSize: "10,000–60,000 sq ft",
+      "Parks positioned for individual condominium sales where demographics and market factors support an ownership exit.",
+    typicalUse: "Owner-user condominium sales",
+    typicalSize: "Varies by submarket",
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "lease-park",
+    name: "Lease-Up Flex Parks",
+    description:
+      "Multi-tenant parks designed and marketed for long-term leasing, occupancy growth, and investment hold strategies.",
+    typicalUse: "Leasing and long-term investment",
+    typicalSize: "Multi-building parks",
+    image:
+      "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "storage-yard",
+    name: "Storage Side Yard Product",
+    description:
+      "Parks enhanced with side storage yards and freestanding docks to stand out from local competitors.",
+    typicalUse: "Tenants needing outdoor storage / dock access",
+    typicalSize: "Amenity-enhanced parks",
+    image:
+      "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "value-add",
+    name: "Value-Add Parks",
+    description:
+      "Opportunistic small-bay assets where repositioning, leasing strategy, and market pricing can unlock upside.",
+    typicalUse: "Investors seeking value creation",
+    typicalSize: "Varies",
+    image:
+      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "stabilized",
+    name: "Stabilized Assets",
+    description:
+      "Income-producing flex industrial parks with established occupancy and institutional or private capital appeal.",
+    typicalUse: "Core and core-plus investors",
+    typicalSize: "Stabilized portfolios / parks",
+    image:
+      "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "mixed-use-wh",
+    name: "Mixed-Use Warehouse / Storage",
+    description:
+      "Hybrid warehouse and storage investments serving local operators across DFW and other growth markets.",
+    typicalUse: "Storage and light industrial investment",
+    typicalSize: "Single assets to portfolios",
+    image:
+      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "multi-building",
+    name: "Multi-Building Portfolios",
+    description:
+      "Portfolio transactions across multiple industrial buildings for investors seeking scale in flex markets.",
+    typicalUse: "Portfolio acquisitions and dispositions",
+    typicalSize: "Multi-asset packages",
     image:
       "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
   },

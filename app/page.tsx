@@ -12,7 +12,7 @@ import { SiteSelectionSection } from "@/components/landing/site-selection-sectio
 import { WarehouseTypes } from "@/components/landing/warehouse-types";
 import { PerformanceSection } from "@/components/landing/performance-section";
 import { SustainabilitySection } from "@/components/landing/sustainability-section";
-import { WhyVertex } from "@/components/landing/why-vertex";
+import { WhyFlexParks } from "@/components/landing/why-vertex";
 import { ClientTypes } from "@/components/landing/client-types";
 import { Testimonials } from "@/components/landing/testimonials";
 import { MarketsSection } from "@/components/landing/markets-section";
@@ -41,7 +41,7 @@ export default function HomePage() {
         <WarehouseTypes />
         <PerformanceSection />
         <SustainabilitySection />
-        <WhyVertex />
+        <WhyFlexParks />
         <ClientTypes />
         <Testimonials />
         <MarketsSection />

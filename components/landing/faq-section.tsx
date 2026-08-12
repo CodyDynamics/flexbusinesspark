@@ -19,7 +19,7 @@ export function FaqSection() {
             <SectionHeading
               eyebrow="FAQ"
               title="Frequently Asked Questions"
-              description="Answers to common questions about warehouse construction timelines, budgeting, design-build delivery, and project requirements."
+              description="Answers to common questions about small bay industrial brokerage, investment sales, site selection, leasing, and development advisory."
             />
           </Reveal>
 

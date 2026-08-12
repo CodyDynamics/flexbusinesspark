@@ -11,8 +11,20 @@ type ProjectCardProps = {
   className?: string;
 };
 
+function getSizeLabel(project: IndustrialProject) {
+  if (project.sizeSqFt > 0) {
+    return `${project.sizeSqFt.toLocaleString()} sq ft`;
+  }
+
+  if (project.features.some((feature) => /sold|closed/i.test(feature))) {
+    return "Sold / Closed";
+  }
+
+  return null;
+}
+
 export function ProjectCard({ project, className }: ProjectCardProps) {
-  const formattedSize = `${project.sizeSqFt.toLocaleString()} sq ft`;
+  const sizeLabel = getSizeLabel(project);
 
   return (
     <article
@@ -36,9 +48,11 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-industrial-orange">
             {project.type}
           </p>
-          <p className="mt-2 font-heading text-2xl font-bold text-white">
-            {formattedSize}
-          </p>
+          {sizeLabel ? (
+            <p className="mt-2 font-heading text-2xl font-bold text-white">
+              {sizeLabel}
+            </p>
+          ) : null}
           <p className="mt-2 flex items-center gap-2 text-sm text-white/80">
             <MapPin className="size-4 shrink-0" aria-hidden />
             {project.location}
@@ -56,7 +70,9 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           <h3 className="mt-1 font-heading text-xl font-bold text-white">
             {project.name}
           </h3>
-          <p className="mt-1 text-sm text-white/80">{formattedSize}</p>
+          {sizeLabel ? (
+            <p className="mt-1 text-sm text-white/80">{sizeLabel}</p>
+          ) : null}
           <p className="mt-1 flex items-center gap-1.5 text-sm text-white/70">
             <MapPin className="size-3.5 shrink-0" aria-hidden />
             {project.location}
@@ -76,7 +92,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           className="mt-5 border-white/20 bg-transparent text-white hover:border-industrial-orange hover:bg-industrial-orange hover:text-white"
           render={<a href="#contact" />}
         >
-          View Project
+          Discuss Transaction
         </Button>
       </div>
 
@@ -85,7 +101,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           className="w-full bg-navy text-white hover:bg-steel"
           render={<a href="#contact" />}
         >
-          View Project
+          View Opportunity
         </Button>
       </div>
     </article>

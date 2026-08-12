@@ -101,7 +101,7 @@ export function Header() {
               className="hidden h-10 bg-industrial-orange px-5 text-white hover:bg-industrial-orange/90 lg:inline-flex"
               render={<a href="#contact" />}
             >
-              Discuss Your Project
+              Discuss Your Opportunity
             </Button>
 
             <Button

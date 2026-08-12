@@ -3,14 +3,12 @@ import { SectionHeading } from "@/components/landing/section-heading";
 import { cn } from "@/lib/utils";
 
 const clientTypes = [
-  "Owner-Users",
+  "Investors",
   "Developers",
-  "Industrial Investors",
-  "Logistics Companies",
-  "Manufacturers",
-  "Retailers",
-  "E-Commerce Companies",
-  "3PL Operators",
+  "Owner-Users",
+  "Institutions",
+  "Landlords",
+  "Tenants",
 ] as const;
 
 function getMonogram(name: string) {
@@ -28,15 +26,15 @@ export function ClientTypes() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Partnerships"
+            eyebrow="Client Types"
             title="Who We Work With"
-            description="We partner with operators, investors, and developers investing in industrial assets across logistics, manufacturing, and distribution."
+            description="We partner with investors, developers, owner-users, institutions, landlords, and tenants across small bay industrial and flex space markets nationwide."
             align="center"
             className="mx-auto"
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {clientTypes.map((client, index) => (
             <Reveal key={client} delay={index * 0.05}>
               <article

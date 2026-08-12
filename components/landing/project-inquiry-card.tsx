@@ -29,6 +29,7 @@ import {
   projectTypeOptions,
   type HeroInquiryValues,
 } from "@/lib/validation";
+import { COMPANY } from "@/data/company";
 import { cn } from "@/lib/utils";
 
 type ProjectInquiryCardProps = {
@@ -59,8 +60,8 @@ export function ProjectInquiryCard({ className }: ProjectInquiryCardProps) {
     setIsSubmitting(true);
     try {
       await new Promise((resolve) => setTimeout(resolve, 1200));
-      toast.success("Consultation request received", {
-        description: `Thanks, ${data.name.split(" ")[0]}. Our team will reach out within one business day.`,
+      toast.success("Inquiry received", {
+        description: `Thanks, ${data.name.split(" ")[0]}. The Flex Parks team will reach out within one business day.`,
       });
       reset();
     } catch {
@@ -81,11 +82,11 @@ export function ProjectInquiryCard({ className }: ProjectInquiryCardProps) {
     >
       <CardHeader className="border-b border-industrial-gray/80 bg-surface/50">
         <CardTitle className="text-lg font-bold text-navy">
-          Planning a Warehouse Project?
+          Planning a Flex Opportunity?
         </CardTitle>
         <CardDescription>
-          Share your project requirements and request a consultation with our
-          industrial team.
+          Share your market, size range, and inquiry type — our small bay
+          specialists will follow up promptly.
         </CardDescription>
       </CardHeader>
 
@@ -121,7 +122,7 @@ export function ProjectInquiryCard({ className }: ProjectInquiryCardProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="hero-email">Business Email</Label>
+              <Label htmlFor="hero-email">Email</Label>
               <Input
                 id="hero-email"
                 type="email"
@@ -149,7 +150,7 @@ export function ProjectInquiryCard({ className }: ProjectInquiryCardProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="hero-location">Project Location</Label>
+              <Label htmlFor="hero-location">Market / Location</Label>
               <Input
                 id="hero-location"
                 placeholder="City, State"
@@ -164,7 +165,7 @@ export function ProjectInquiryCard({ className }: ProjectInquiryCardProps) {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="hero-facility-size">Estimated Facility Size</Label>
+              <Label htmlFor="hero-facility-size">Estimated Size</Label>
               <Controller
                 name="facilitySize"
                 control={control}
@@ -200,7 +201,7 @@ export function ProjectInquiryCard({ className }: ProjectInquiryCardProps) {
             </div>
 
             <div className="space-y-1.5 sm:col-span-2">
-              <Label htmlFor="hero-project-type">Project Type</Label>
+              <Label htmlFor="hero-project-type">Inquiry Type</Label>
               <Controller
                 name="projectType"
                 control={control}
@@ -248,12 +249,12 @@ export function ProjectInquiryCard({ className }: ProjectInquiryCardProps) {
                 Submitting…
               </>
             ) : (
-              "Request Consultation"
+              "Send Inquiry"
             )}
           </Button>
 
           <p className="text-center text-xs leading-relaxed text-muted-foreground">
-            Our industrial team typically responds within one business day.
+            The {COMPANY.shortName} Parks team typically responds within one business day.
           </p>
         </form>
       </CardContent>

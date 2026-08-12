@@ -10,9 +10,9 @@ export function FeaturedProjects() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Selected Work"
-            title="Projects Designed for Performance"
-            description="Representative industrial developments engineered for throughput, scalability, and long-term operational value."
+            eyebrow="Recent Transactions"
+            title="Selected Closings"
+            description="Representative small bay industrial and flex space acquisitions, dispositions, and portfolio transactions across our national markets."
           />
         </Reveal>
 

@@ -4,16 +4,16 @@ import { SectionHeading } from "@/components/landing/section-heading";
 import { Button } from "@/components/ui/button";
 
 const evaluationCategories = [
-  "Highway access",
-  "Labor availability",
-  "Utilities",
-  "Zoning",
-  "Truck circulation",
-  "Parcel configuration",
-  "Regional distribution reach",
-  "Tax incentives",
-  "Land cost",
-  "Expansion potential",
+  "Local demographics and demand",
+  "Rent comps and absorption",
+  "Supply pipeline analysis",
+  "Build economics and pricing",
+  "Competitive park inventory",
+  "Suite sizing fundamentals",
+  "Showroom vs warehouse mix",
+  "Regional growth corridors",
+  "Land cost and yield",
+  "Exit strategy alignment",
 ] as const;
 
 const mapMarkers = [
@@ -26,14 +26,14 @@ const mapMarkers = [
 
 export function SiteSelectionSection() {
   return (
-    <section className="bg-surface py-20 md:py-28">
+    <section id="world-engine" className="bg-surface py-20 md:py-28">
       <div className="container-industrial">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <SectionHeading
-              eyebrow="Site Strategy"
-              title="The Right Warehouse Starts With the Right Site"
-              description="We evaluate industrial sites from both development and operational perspectives — balancing logistics connectivity, infrastructure, regulatory requirements, and long-term expansion potential."
+              eyebrow="World Engine"
+              title="Proprietary Site Selection for Small Bay Industrial"
+              description="World Engine quickly evaluates land sites for small bay demand, competitive supply, rent fundamentals, and build economics — before deeper feasibility and capital commitment."
             />
 
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -56,14 +56,14 @@ export function SiteSelectionSection() {
               className="mt-8 h-11 bg-navy px-6 text-white hover:bg-steel"
               render={<a href="#contact" />}
             >
-              Discuss Site Selection
+              Request World Engine Analysis
             </Button>
           </Reveal>
 
           <Reveal delay={0.12}>
             <div
               className="relative aspect-[4/3] overflow-hidden border border-industrial-gray bg-white p-6 md:p-8"
-              aria-label="Stylized map showing industrial market evaluation points across the United States"
+              aria-label="Stylized map showing World Engine market evaluation points across the United States"
             >
               <div className="absolute inset-0 grid-blueprint opacity-60" aria-hidden />
 
@@ -102,7 +102,7 @@ export function SiteSelectionSection() {
 
                 <div className="absolute bottom-4 left-4 flex items-center gap-2 border border-industrial-gray bg-white/90 px-3 py-2 text-xs text-slate-industrial backdrop-blur-sm">
                   <MapPin className="size-3.5 text-industrial-orange" aria-hidden />
-                  Site evaluation across high-growth U.S. markets
+                  Small bay site analysis across high-growth U.S. markets
                 </div>
               </div>
             </div>

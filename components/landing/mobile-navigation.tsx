@@ -66,7 +66,7 @@ export function MobileNavigation({ open, onOpenChange }: MobileNavigationProps) 
             className="h-11 w-full bg-industrial-orange text-white hover:bg-industrial-orange/90"
             render={<a href="#contact" onClick={() => onOpenChange(false)} />}
           >
-            Discuss Your Project
+            Discuss Your Opportunity
           </Button>
         </div>
       </SheetContent>

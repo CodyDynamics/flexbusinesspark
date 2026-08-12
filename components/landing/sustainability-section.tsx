@@ -1,25 +1,31 @@
-import { Gauge, Leaf, Sun, Zap, type LucideIcon } from "lucide-react";
+import {
+  Building2,
+  LineChart,
+  ListOrdered,
+  Sparkles,
+  TrendingUp,
+  Users,
+  type LucideIcon,
+} from "lucide-react";
 
 import { Reveal } from "@/components/landing/reveal";
 import { SectionHeading } from "@/components/landing/section-heading";
 import { cn } from "@/lib/utils";
 
-type SustainabilityItem = {
+type PerformanceItem = {
   title: string;
   icon: LucideIcon;
 };
 
-const capabilities: SustainabilityItem[] = [
-  { title: "LED lighting", icon: Zap },
-  { title: "Roof insulation", icon: Leaf },
-  { title: "High-efficiency HVAC", icon: Gauge },
-  { title: "Solar-ready roofs", icon: Sun },
-  { title: "EV infrastructure readiness", icon: Zap },
-  { title: "Low-flow fixtures", icon: Gauge },
-  { title: "Smart building controls", icon: Gauge },
-  { title: "Reflective roofing", icon: Sun },
-  { title: "Natural daylight", icon: Sun },
-  { title: "Efficient site lighting", icon: Zap },
+const drivers: PerformanceItem[] = [
+  { title: "Occupancy optimization", icon: Building2 },
+  { title: "Rental growth strategy", icon: TrendingUp },
+  { title: "Amenity differentiation", icon: Sparkles },
+  { title: "Waiting list demand", icon: ListOrdered },
+  { title: "Tenant retention programs", icon: Users },
+  { title: "Market positioning", icon: LineChart },
+  { title: "Suite reconfiguration potential", icon: Building2 },
+  { title: "Multi-tenant income stability", icon: TrendingUp },
 ];
 
 export function SustainabilitySection() {
@@ -28,16 +34,16 @@ export function SustainabilitySection() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Building Efficiency"
-            title="Smarter Industrial Buildings"
-            description="Our design teams evaluate practical sustainability strategies that can improve building efficiency while supporting long-term operating performance."
+            eyebrow="Asset Performance"
+            title="Long-Term Asset Performance"
+            description="We focus on the operating and value drivers that matter most in small bay flex industrial — occupancy, rents, amenities, tenant mix, and sustained demand."
             align="center"
             className="mx-auto"
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {capabilities.map((item, index) => {
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+          {drivers.map((item, index) => {
             const Icon = item.icon;
 
             return (
@@ -62,8 +68,8 @@ export function SustainabilitySection() {
 
         <Reveal delay={0.2}>
           <p className="mx-auto mt-10 max-w-2xl text-center text-xs leading-relaxed text-slate-industrial">
-            Sustainability strategies are evaluated on a project-specific basis. We do not
-            represent third-party certification unless formally achieved for your facility.
+            Performance strategies are tailored to each asset, market, and hold period —
+            focused on practical drivers of occupancy, rental growth, and long-term value.
           </p>
         </Reveal>
       </div>

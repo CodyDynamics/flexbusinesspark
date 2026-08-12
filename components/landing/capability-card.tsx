@@ -4,10 +4,14 @@ import {
   Boxes,
   Building2,
   Factory,
+  Globe2,
+  HardHat,
   MapPin,
   Ruler,
   Settings,
   Snowflake,
+  TrendingUp,
+  Users,
   Warehouse,
   type LucideIcon,
 } from "lucide-react";
@@ -15,14 +19,18 @@ import type { Capability } from "@/types/industrial";
 import { cn } from "@/lib/utils";
 
 const iconMap: Record<string, LucideIcon> = {
+  TrendingUp,
   Ruler,
   Warehouse,
   Building2,
   MapPin,
+  Users,
+  Globe2,
+  Settings,
+  HardHat,
   Boxes,
   Factory,
   Snowflake,
-  Settings,
 };
 
 type CapabilityCardProps = {

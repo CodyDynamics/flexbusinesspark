@@ -1,6 +1,6 @@
 "use client";
 
-import { Building2, Phone } from "lucide-react";
+import { MessageSquare, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { COMPANY } from "@/data/company";
@@ -35,8 +35,8 @@ export function MobileStickyCta({ className }: MobileStickyCtaProps) {
           className="h-11 bg-industrial-orange text-white hover:bg-industrial-orange/90"
           render={<a href="#contact" />}
         >
-          <Building2 aria-hidden />
-          Discuss Project
+          <MessageSquare aria-hidden />
+          Discuss Opportunity
         </Button>
       </div>
     </div>

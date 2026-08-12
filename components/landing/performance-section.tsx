@@ -1,11 +1,11 @@
 import {
   ArrowRight,
-  Boxes,
-  Container,
-  Package,
-  Truck,
-  Warehouse,
-  Zap,
+  BarChart3,
+  Database,
+  Gavel,
+  Network,
+  TrendingUp,
+  Users,
 } from "lucide-react";
 
 import { Reveal } from "@/components/landing/reveal";
@@ -13,20 +13,20 @@ import { SectionHeading } from "@/components/landing/section-heading";
 import { cn } from "@/lib/utils";
 
 const metrics = [
-  "Faster truck turnaround",
-  "Efficient warehouse cube utilization",
-  "Optimized dock capacity",
-  "Reduced internal travel distance",
-  "Expandable layouts",
-  "Energy-efficient building systems",
+  "Competitive bidding through our national buyer network",
+  "Pricing benchmarks from 50+ market record transactions",
+  "Proprietary transaction and comp database",
+  "Data-driven underwriting and feasibility analysis",
+  "Institutional and private capital relationships",
+  "Market record pricing intelligence on every deal",
 ] as const;
 
 const flowSteps = [
-  { label: "Warehouse", icon: Warehouse },
-  { label: "Storage", icon: Boxes },
-  { label: "Picking", icon: Package },
-  { label: "Loading", icon: Container },
-  { label: "Transportation", icon: Truck },
+  { label: "Site Analysis", icon: BarChart3 },
+  { label: "Underwriting", icon: TrendingUp },
+  { label: "Buyer Network", icon: Network },
+  { label: "Competitive Bid", icon: Gavel },
+  { label: "Close", icon: Users },
 ] as const;
 
 export function PerformanceSection() {
@@ -42,9 +42,9 @@ export function PerformanceSection() {
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center lg:gap-16 xl:gap-20">
           <Reveal>
             <SectionHeading
-              eyebrow="Operational Performance"
-              title="Built to Deliver Measurable Performance"
-              description="Every facility decision — from dock count to clear height — is evaluated against throughput, labor efficiency, and long-term operating cost."
+              eyebrow="Our Platform"
+              title="Data, Buyers, and Pricing That Drive Results"
+              description="Flex Parks combines proprietary market data, a national buyer network, and market record pricing to maximize outcomes on every acquisition, disposition, and advisory engagement."
               light
             />
 
@@ -64,7 +64,7 @@ export function PerformanceSection() {
           <Reveal delay={0.12}>
             <div className="border border-white/10 bg-white/[0.03] p-6 md:p-8">
               <p className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-industrial-orange">
-                Facility Flow
+                Transaction Platform
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between lg:flex-col xl:flex-row">
@@ -101,9 +101,9 @@ export function PerformanceSection() {
               </div>
 
               <div className="mt-8 flex items-center gap-2 border-t border-white/10 pt-6 text-xs text-white/60">
-                <Zap className="size-3.5 text-industrial-orange" aria-hidden />
+                <Database className="size-3.5 text-industrial-orange" aria-hidden />
                 <span>
-                  Layout planning aligned with receiving, storage, fulfillment, and outbound logistics.
+                  Every engagement backed by proprietary comps, buyer intelligence, and market record pricing.
                 </span>
               </div>
             </div>

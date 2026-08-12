@@ -26,6 +26,7 @@ import {
   projectTypeOptions,
   type ProjectInquiryValues,
 } from "@/lib/validation";
+import { COMPANY } from "@/data/company";
 import { cn } from "@/lib/utils";
 
 type ProjectFormProps = {
@@ -61,8 +62,8 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
     setIsSubmitting(true);
     try {
       await new Promise((resolve) => setTimeout(resolve, 1400));
-      toast.success("Project inquiry submitted", {
-        description: `Thank you, ${data.firstName}. A project advisor will contact you within one business day.`,
+      toast.success("Inquiry sent", {
+        description: `Thank you, ${data.firstName}. The Flex Parks team will contact you within one business day.`,
       });
       reset();
     } catch {
@@ -139,7 +140,7 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="contact-email">Business email</Label>
+          <Label htmlFor="contact-email">Email</Label>
           <Input
             id="contact-email"
             type="email"
@@ -167,7 +168,7 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
         </div>
 
         <div className="space-y-1.5 sm:col-span-2">
-          <Label htmlFor="contact-location">Project location</Label>
+          <Label htmlFor="contact-location">Market / location</Label>
           <Input
             id="contact-location"
             placeholder="City, State or region"
@@ -182,7 +183,7 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="contact-project-type">Project type</Label>
+          <Label htmlFor="contact-project-type">Inquiry type</Label>
           <Controller
             name="projectType"
             control={control}
@@ -195,7 +196,7 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
                   className="w-full"
                   aria-invalid={!!errors.projectType}
                 >
-                  <SelectValue placeholder="Select project type" />
+                  <SelectValue placeholder="Select inquiry type" />
                 </SelectTrigger>
                 <SelectContent>
                   {projectTypeOptions.map((option) => (
@@ -215,7 +216,7 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="contact-facility-size">Estimated facility size</Label>
+          <Label htmlFor="contact-facility-size">Estimated size</Label>
           <Controller
             name="facilitySize"
             control={control}
@@ -279,9 +280,7 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="contact-construction-start">
-            Desired construction start
-          </Label>
+          <Label htmlFor="contact-construction-start">Timeline</Label>
           <Controller
             name="constructionStart"
             control={control}
@@ -314,11 +313,11 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
         </div>
 
         <div className="space-y-1.5 sm:col-span-2">
-          <Label htmlFor="contact-message">Project overview</Label>
+          <Label htmlFor="contact-message">Opportunity overview</Label>
           <Textarea
             id="contact-message"
             rows={5}
-            placeholder="Tell us about your site, timeline, operational requirements, and any specific design-build needs."
+            placeholder="Tell us about your market, asset type, timeline, and what you're looking to accomplish."
             aria-invalid={!!errors.message}
             {...register("message")}
           />
@@ -348,8 +347,8 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
             htmlFor="contact-consent"
             className="text-sm leading-relaxed font-normal text-slate-industrial"
           >
-            I agree to be contacted about my project inquiry and understand that
-            Vertex Industrial Build will use my information in accordance with
+            I agree to receive communications about my inquiry and understand
+            that {COMPANY.name} will use my information in accordance with
             applicable privacy policies.
           </Label>
         </div>
@@ -370,7 +369,7 @@ export function ProjectForm({ className, id }: ProjectFormProps) {
             Submitting inquiry…
           </>
         ) : (
-          "Submit Project Inquiry"
+          "Send Inquiry"
         )}
       </Button>
     </form>

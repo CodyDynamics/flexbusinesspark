@@ -1,7 +1,7 @@
 import {
   CircleDollarSign,
-  Clock3,
-  Maximize2,
+  Globe2,
+  Settings,
   TrendingUp,
   Users,
   Warehouse,
@@ -18,52 +18,52 @@ const reasons: {
   icon: LucideIcon;
 }[] = [
   {
-    title: "Industrial Focus",
+    title: "Exclusive Small-Bay Focus",
     description:
-      "We specialize in warehouse, logistics, manufacturing, and industrial facilities.",
+      "We specialize exclusively in small bay industrial and flex space — not general commercial or big-box warehouse product.",
     icon: Warehouse,
   },
   {
-    title: "Integrated Team",
+    title: "1,000+ Transactions",
     description:
-      "Design, engineering, preconstruction, and field teams work together from day one.",
-    icon: Users,
-  },
-  {
-    title: "Data-Driven Planning",
-    description:
-      "We evaluate layouts based on operational requirements instead of generic building templates.",
+      "More than two decades and over 1,000 closed transactions across acquisitions, dispositions, and advisory engagements.",
     icon: TrendingUp,
   },
   {
-    title: "Cost Transparency",
+    title: "Proprietary World Engine",
     description:
-      "Detailed preconstruction planning provides visibility before major commitments are made.",
+      "Our World Engine site selection tool evaluates demand, competition, and pricing fundamentals before deeper feasibility begins.",
+    icon: Settings,
+  },
+  {
+    title: "National Buyer Network",
+    description:
+      "Proprietary buyer databases and institutional relationships drive competitive bidding on every investment sale.",
+    icon: Users,
+  },
+  {
+    title: "Leasing Expertise",
+    description:
+      "Deep understanding of tenant demand, suite sizing, and market positioning for multi-tenant flex properties.",
+    icon: Globe2,
+  },
+  {
+    title: "Market Record Pricing",
+    description:
+      "50+ market record pricing benchmarks inform every underwriting decision and disposition strategy.",
     icon: CircleDollarSign,
-  },
-  {
-    title: "Schedule Discipline",
-    description:
-      "Critical-path planning helps keep procurement and construction aligned.",
-    icon: Clock3,
-  },
-  {
-    title: "Scalable Facilities",
-    description:
-      "We design buildings with future expansion, automation, and evolving operations in mind.",
-    icon: Maximize2,
   },
 ];
 
-export function WhyVertex() {
+export function WhyFlexParks() {
   return (
     <section id="about" className="bg-white py-20 md:py-28">
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Why Vertex"
-            title="Industrial Expertise From Planning Through Delivery"
-            description="Vertex Industrial Build brings focused industrial experience across design-build delivery, preconstruction, and field execution."
+            eyebrow="Why Flex Parks"
+            title="The Nation's Small Bay Industrial Specialists"
+            description="Flex Business Parks brings focused expertise across brokerage, investment sales, site selection, leasing, and development advisory — exclusively for small-bay flex industrial real estate."
           />
         </Reveal>
 

@@ -3,25 +3,26 @@
 import Image from "next/image";
 import {
   ArrowRight,
-  Building2,
   CheckCircle2,
   Globe2,
-  HardHat,
+  TrendingUp,
+  Clock3,
 } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 
 import { ProjectInquiryCard } from "@/components/landing/project-inquiry-card";
 import { Button } from "@/components/ui/button";
+import { COMPANY } from "@/data/company";
 import { cn } from "@/lib/utils";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2400&q=80";
 
 const TRUST_INDICATORS = [
-  { icon: Building2, label: "Design-Build Expertise" },
-  { icon: Globe2, label: "Nationwide Project Capability" },
-  { icon: HardHat, label: "Industrial Specialists" },
-  { icon: CheckCircle2, label: "End-to-End Delivery" },
+  { icon: TrendingUp, label: "1,000+ Transactions" },
+  { icon: CheckCircle2, label: "50+ Market Records" },
+  { icon: Globe2, label: "Nationwide Focus" },
+  { icon: Clock3, label: "20+ Years Experience" },
 ] as const;
 
 const fadeUp = {
@@ -61,7 +62,7 @@ export function HeroSection({ className }: HeroSectionProps) {
     >
       <Image
         src={HERO_IMAGE}
-        alt="Aerial view of a modern logistics warehouse and distribution facility"
+        alt="Small bay industrial flex business park with multi-tenant suites"
         fill
         preload
         sizes="100vw"
@@ -84,7 +85,7 @@ export function HeroSection({ className }: HeroSectionProps) {
               {...itemProps}
               className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-industrial-orange"
             >
-              Industrial Development & Construction
+              Small Bay Industrial &amp; Flex Space
             </motion.p>
 
             <motion.h1
@@ -92,17 +93,17 @@ export function HeroSection({ className }: HeroSectionProps) {
               id="hero-heading"
               className="text-balance text-4xl font-bold leading-[1.08] text-white sm:text-5xl md:text-6xl xl:text-7xl"
             >
-              Warehouses Built for the Way Business Moves.
+              The Nation&apos;s Small Bay Industrial Specialists.
             </motion.h1>
 
             <motion.p
               {...itemProps}
               className="mt-5 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg"
             >
-              From site strategy and facility design to construction and final
-              delivery, Vertex Industrial Build creates high-performance
-              warehouse and logistics facilities engineered for operational
-              efficiency and future growth.
+              {COMPANY.name} specializes exclusively in small bay industrial and
+              flex space — brokerage, investment sales, site selection, leasing,
+              and development advisory for investors, developers, and owner-users
+              nationwide.
             </motion.p>
 
             <motion.div
@@ -114,7 +115,7 @@ export function HeroSection({ className }: HeroSectionProps) {
                 className="h-11 bg-industrial-orange px-6 text-white hover:bg-industrial-orange/90"
                 render={<a href="#contact" />}
               >
-                Discuss Your Project
+                Discuss Your Opportunity
                 <ArrowRight />
               </Button>
               <Button
@@ -123,7 +124,7 @@ export function HeroSection({ className }: HeroSectionProps) {
                 className="h-11 border-white/25 bg-white/5 px-6 text-white hover:bg-white/10 hover:text-white"
                 render={<a href="#projects" />}
               >
-                Explore Our Projects
+                Explore Transactions
               </Button>
             </motion.div>
 

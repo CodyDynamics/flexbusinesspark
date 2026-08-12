@@ -3,18 +3,18 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
-        "@id": "https://vertexindustrial.com/#organization",
-        name: "Vertex Industrial Build",
-        url: "https://vertexindustrial.com",
-        email: "projects@vertexindustrial.com",
-        telephone: "+1-469-555-0188",
+        "@type": ["Organization", "LocalBusiness", "RealEstateAgent"],
+        "@id": "https://flexbusinessparks.com/#organization",
+        name: "Flex Business Parks",
+        alternateName: "Flex Parks USA",
+        url: "https://flexbusinessparks.com",
+        telephone: "+1-972-345-6500",
         description:
-          "Design-build warehouse construction and industrial development services across the United States.",
-        slogan: "Built for Logistics. Engineered for Growth.",
+          "Flex Business Parks specializes exclusively in small bay industrial and flex space properties across the United States — brokerage, investment sales, site selection, leasing, and development advisory.",
+        slogan: "Small Bay Industrial. Flex Space Nationwide.",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Dallas",
+          addressLocality: "Fort Worth",
           addressRegion: "TX",
           addressCountry: "US",
         },
@@ -22,61 +22,45 @@ export function JsonLd() {
           "@type": "Country",
           name: "United States",
         },
-        openingHoursSpecification: {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "08:00",
-          closes: "18:00",
-        },
-        sameAs: ["https://www.linkedin.com/company/vertex-industrial-build"],
+        sameAs: [
+          "https://www.linkedin.com/company/flex-parks-usa",
+          "https://www.facebook.com/333633919835461",
+          "https://www.instagram.com/flexparksusa/",
+          "https://www.youtube.com/@flexparksusa",
+          "https://www.x.com/tx_investments",
+        ],
       },
       {
         "@type": "Service",
-        name: "Warehouse Construction",
-        provider: { "@id": "https://vertexindustrial.com/#organization" },
+        name: "Investment Sales",
+        provider: { "@id": "https://flexbusinessparks.com/#organization" },
         areaServed: "United States",
         description:
-          "Ground-up construction for logistics facilities, distribution centers, and industrial warehouses.",
+          "Acquisition and disposition of small-bay flex industrial properties nationwide.",
       },
       {
         "@type": "Service",
-        name: "Design-Build",
-        provider: { "@id": "https://vertexindustrial.com/#organization" },
+        name: "Site Selection & Feasibility",
+        provider: { "@id": "https://flexbusinessparks.com/#organization" },
         areaServed: "United States",
         description:
-          "Integrated industrial design and construction delivery for warehouse and logistics facilities.",
+          "Data-driven small bay industrial site analysis using World Engine and Small Bay Feasibility.",
       },
       {
         "@type": "Service",
-        name: "Industrial Development",
-        provider: { "@id": "https://vertexindustrial.com/#organization" },
+        name: "Leasing",
+        provider: { "@id": "https://flexbusinessparks.com/#organization" },
         areaServed: "United States",
         description:
-          "Industrial development planning and delivery for warehouse, manufacturing, and flex facilities.",
+          "Leasing services for multi-tenant small-bay flex industrial properties.",
       },
       {
         "@type": "Service",
-        name: "Build-to-Suit Construction",
-        provider: { "@id": "https://vertexindustrial.com/#organization" },
+        name: "Development Advisory",
+        provider: { "@id": "https://flexbusinessparks.com/#organization" },
         areaServed: "United States",
         description:
-          "Purpose-built industrial facilities designed around specific operational requirements.",
-      },
-      {
-        "@type": "Service",
-        name: "Site Planning",
-        provider: { "@id": "https://vertexindustrial.com/#organization" },
-        areaServed: "United States",
-        description:
-          "Industrial site feasibility, truck access, utilities, and development strategy.",
-      },
-      {
-        "@type": "Service",
-        name: "Warehouse Renovation",
-        provider: { "@id": "https://vertexindustrial.com/#organization" },
-        areaServed: "United States",
-        description:
-          "Strategic warehouse expansions and renovations that increase capacity with minimal disruption.",
+          "Advisory for flex park development, condo vs lease strategy, and market positioning.",
       },
     ],
   };

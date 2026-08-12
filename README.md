@@ -1,6 +1,6 @@
-# Vertex Industrial Build
+# Flex Business Parks
 
-Premium landing page for a fictional international warehouse design and construction company. Built for design demonstration purposes.
+Premium landing page for Flex Business Parks (Flex Parks USA) — small bay industrial and flex space brokerage, investment sales, site selection, leasing, and development advisory nationwide.
 
 ## Tech stack
 
@@ -94,6 +94,6 @@ CRM_API_KEY=
 
 See `.env.example`.
 
-## Disclaimer
+## About
 
-Vertex Industrial Build is a fictional company created for website design demonstration purposes. Statistics and testimonials are demo content.
+Flex Business Parks specializes exclusively in small bay industrial and flex space real estate across the United States. Content reflects public company information from [flexbusinessparks.com](https://flexbusinessparks.com).

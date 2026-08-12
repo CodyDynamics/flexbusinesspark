@@ -8,39 +8,39 @@ import { cn } from "@/lib/utils";
 const processSteps = [
   {
     step: "01",
-    title: "Project Discovery",
+    title: "Site Selection",
     description:
-      "Understand operations, facility size, timeline, budget parameters, and growth plans.",
+      "Identify land with strong small bay demand, competitive supply, and pricing fundamentals using World Engine and market intelligence.",
   },
   {
     step: "02",
-    title: "Site & Feasibility",
+    title: "Design Strategy",
     description:
-      "Evaluate site access, zoning, utilities, grading requirements, and logistics connectivity.",
+      "Define suite sizing, frontage, storage yards, dock configuration, and amenities aligned with target tenants and exit strategy.",
   },
   {
     step: "03",
-    title: "Concept Design",
+    title: "Condo / Lease Positioning",
     description:
-      "Develop site layout, building footprint, dock strategy, and circulation planning.",
+      "Position the park for lease-up, condominium sales, or a hybrid hold strategy before breaking ground.",
   },
   {
     step: "04",
-    title: "Preconstruction",
+    title: "Leasing",
     description:
-      "Create detailed budget, procurement strategy, construction schedule, and risk analysis.",
+      "Drive occupancy with targeted marketing, tenant screening, and suite mix optimization for long-term asset performance.",
   },
   {
     step: "05",
-    title: "Construction",
+    title: "Investment Hold",
     description:
-      "Manage site work, structural systems, building envelope, MEP, interiors, and inspections.",
+      "Support owners maximizing rental growth, occupancy, and operational efficiency during the hold period.",
   },
   {
     step: "06",
-    title: "Commissioning & Handover",
+    title: "Disposition",
     description:
-      "Complete inspections, punch lists, system testing, documentation, and client turnover.",
+      "Execute investment sales with proprietary buyer networks, market record pricing, and competitive bidding.",
   },
 ] as const;
 
@@ -53,9 +53,9 @@ export function DevelopmentProcess() {
     <section id="process" className="bg-surface py-20 md:py-28">
       <div className="container-industrial">
         <SectionHeading
-          eyebrow="Our Process"
-          title="From Site Strategy to Operational Facility"
-          description="A disciplined development approach that aligns planning, design, procurement, and construction from the earliest project stages."
+          eyebrow="360 Advantage"
+          title="From Site Selection to Successful Exit"
+          description="An end-to-end platform covering site selection, park design strategy, leasing or condo positioning, investment hold, and disposition for flex industrial investors and developers."
         />
 
         <div ref={ref} className="relative mt-14">

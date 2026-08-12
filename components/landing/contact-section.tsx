@@ -40,7 +40,7 @@ export function ContactSection() {
           <SectionHeading
             eyebrow="Contact"
             title="Start the Conversation"
-            description="Share your project requirements and our industrial team will follow up to discuss scope, timeline, and next steps."
+            description="Share your opportunity details and our small bay team will follow up to discuss market, scope, timeline, and next steps."
           />
         </Reveal>
 
@@ -48,6 +48,9 @@ export function ContactSection() {
           <Reveal>
             <div className="border border-industrial-gray bg-surface p-7 md:p-8">
               <p className="font-heading text-2xl font-bold text-navy">
+                {COMPANY.legalName}
+              </p>
+              <p className="mt-1 text-sm font-medium text-steel">
                 {COMPANY.name}
               </p>
               <p className="mt-2 text-sm text-slate-industrial">

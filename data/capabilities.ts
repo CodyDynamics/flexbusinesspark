@@ -2,59 +2,59 @@ import type { Capability } from "@/types/industrial";
 
 export const capabilities: Capability[] = [
   {
-    id: "design-build",
-    title: "Design-Build",
+    id: "investment-sales",
+    title: "Investment Sales",
     description:
-      "Integrated design and construction delivery that improves communication, cost visibility, and execution speed.",
-    icon: "Ruler",
+      "Acquisition and disposition of small-bay flex industrial properties nationwide. We leverage deep market expertise, proprietary buyer databases, and institutional relationships to maximize pricing and execute efficiently.",
+    icon: "TrendingUp",
   },
   {
-    id: "warehouse-construction",
-    title: "Warehouse Construction",
+    id: "brokerage",
+    title: "Brokerage",
     description:
-      "Ground-up construction for logistics facilities, distribution centers, storage warehouses, and fulfillment operations.",
-    icon: "Warehouse",
-  },
-  {
-    id: "build-to-suit",
-    title: "Build-to-Suit Development",
-    description:
-      "Purpose-built industrial facilities designed around your operational workflow, equipment, and growth requirements.",
+      "Best-in-class brokerage exclusively focused on small-bay flex industrial real estate for investors, developers, and owner-users seeking high-performing warehouse assets.",
     icon: "Building2",
   },
   {
-    id: "site-planning",
-    title: "Site Planning",
+    id: "site-analysis",
+    title: "Site Analysis",
     description:
-      "Site feasibility, truck access, circulation planning, utilities, building orientation, and development strategy.",
+      "Data-driven site analysis through our Small Bay Feasibility platform and World Engine technology — evaluating demographics, rent comps, absorption, supply pipelines, and build economics.",
     icon: "MapPin",
   },
   {
-    id: "industrial-flex",
-    title: "Industrial Flex Space",
+    id: "leasing",
+    title: "Leasing",
     description:
-      "Flexible warehouse and small-bay industrial facilities designed for multiple tenants and business uses.",
-    icon: "Boxes",
+      "Driving occupancy and rental growth in multi-tenant small-bay flex properties. We understand tenant demand, suite sizing strategy, and market positioning for long-term asset performance.",
+    icon: "Users",
   },
   {
-    id: "manufacturing",
-    title: "Manufacturing Facilities",
+    id: "360-advantage",
+    title: "360 Advantage",
     description:
-      "Industrial environments designed to support equipment, utilities, production flow, storage, and workforce requirements.",
-    icon: "Factory",
+      "An end-to-end platform covering site selection, park design strategy, leasing or condo positioning, and disposition — built to help flex industrial investors and developers succeed.",
+    icon: "Globe2",
   },
   {
-    id: "cold-storage",
-    title: "Cold Storage",
+    id: "world-engine",
+    title: "World Engine",
     description:
-      "Temperature-controlled industrial facilities designed for food distribution, pharmaceutical logistics, and cold-chain operations.",
-    icon: "Snowflake",
-  },
-  {
-    id: "expansion-renovation",
-    title: "Expansion & Renovation",
-    description:
-      "Strategic expansions and upgrades that increase capacity while minimizing disruption to existing operations.",
+      "Our proprietary site selection tool for small bay industrial. Quickly evaluate land sites for demand, competition, and pricing fundamentals before deeper feasibility begins.",
     icon: "Settings",
+  },
+  {
+    id: "development-advisory",
+    title: "Development Advisory",
+    description:
+      "Advisory for developers building to lease or sell as condominiums — including park layout strategy, amenities, marketing, and exit positioning.",
+    icon: "HardHat",
+  },
+  {
+    id: "1031-exchange",
+    title: "1031 Exchange Support",
+    description:
+      "Investment sales support for private investors, developers, and institutional capital executing acquisitions, dispositions, and 1031 exchange transactions.",
+    icon: "Boxes",
   },
 ];

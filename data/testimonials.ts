@@ -1,44 +1,45 @@
 import type { Testimonial } from "@/types/industrial";
 
+/** Press / recognition highlights from Flex Business Parks public materials */
 export const testimonials: Testimonial[] = [
   {
-    id: "1",
+    id: "yahoo",
     quote:
-      "Vertex helped us rethink our distribution facility before construction even started. Their design-build team identified operational improvements that ultimately reduced unnecessary building area and improved dock flow.",
-    person: "Michael Turner",
-    role: "VP of Operations",
-    company: "NorthStar Logistics",
+      "Flex Parks USA Recognized as the Nation's Leading Small Bay Industrial Group.",
+    person: "Yahoo Finance",
+    role: "News Feature",
+    company: "finance.yahoo.com",
   },
   {
-    id: "2",
+    id: "msn",
     quote:
-      "From site feasibility through commissioning, the project stayed aligned with our operational requirements. Cost visibility during preconstruction was especially valuable for our investment committee.",
-    person: "Elena Vasquez",
-    role: "Director of Real Estate",
-    company: "Summit Retail Group",
+      "Flex Parks USA is leading small bay industrial into its next era.",
+    person: "MSN",
+    role: "News Feature",
+    company: "msn.com",
   },
   {
-    id: "3",
+    id: "small-bay",
     quote:
-      "We needed a manufacturing warehouse that could support equipment loads and future expansion. Vertex delivered a facility that works for today’s process and tomorrow’s capacity plan.",
-    person: "James Okonkwo",
-    role: "Chief Operating Officer",
-    company: "Apex Components",
+      "Cody Payne Named the Most Influential Figure in Small Bay Industrial for 2025.",
+    person: "Small Bay News",
+    role: "Industry Recognition",
+    company: "smallbaynews.com",
   },
   {
-    id: "4",
+    id: "records",
     quote:
-      "Their cold storage expertise showed in the details—dock seals, temperature zoning, and circulation planning. The facility supports our distribution network without compromising product integrity.",
-    person: "Sarah Chen",
-    role: "Head of Supply Chain",
-    company: "FreshPath Foods",
+      "With over 50 market-record transactions, our team has set the benchmark in small bay industrial sales.",
+    person: "Flex Parks USA",
+    role: "Market Records",
+    company: "50+ Market Record Sales",
   },
   {
-    id: "5",
+    id: "book",
     quote:
-      "As an industrial developer, we value partners who understand both construction and asset performance. Vertex brought that discipline across schedule, design coordination, and field execution.",
-    person: "David Harrington",
-    role: "Managing Partner",
-    company: "Horizon Industrial Partners",
+      "Flex Space Domination is a top-recognized book on small-bay flex investing for investors and developers nationwide.",
+    person: "Cody Payne",
+    role: "Co-Author",
+    company: "Flex Space Domination",
   },
 ];

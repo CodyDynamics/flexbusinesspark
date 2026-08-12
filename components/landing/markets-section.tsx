@@ -2,6 +2,7 @@ import { Globe2, MapPin } from "lucide-react";
 
 import { Reveal } from "@/components/landing/reveal";
 import { SectionHeading } from "@/components/landing/section-heading";
+import { COMPANY } from "@/data/company";
 import { markets } from "@/data/markets";
 import { cn } from "@/lib/utils";
 
@@ -21,9 +22,9 @@ export function MarketsSection() {
         <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start lg:gap-16">
           <Reveal>
             <SectionHeading
-              eyebrow="Geographic Reach"
-              title="Industrial Projects Across High-Growth Markets"
-              description="We deliver warehouse and logistics facilities across major U.S. industrial corridors, with nationwide opportunities evaluated based on project scope and timing."
+              eyebrow="Markets"
+              title="Texas Roots. Nationwide Reach."
+              description="Headquartered in Fort Worth, Texas, we execute small bay industrial transactions across Texas and nationwide — with deep DFW expertise and coast-to-coast buyer networks."
             />
 
             <div className="mt-8 flex items-start gap-3 border border-industrial-gray bg-white p-5">
@@ -32,8 +33,8 @@ export function MarketsSection() {
                 <span className="font-semibold text-navy">
                   Nationwide opportunities considered.
                 </span>{" "}
-                While headquartered in Dallas, Texas, we evaluate industrial development
-                and construction projects across the United States.
+                While based in {COMPANY.cityState}, we advise on acquisitions,
+                dispositions, leasing, and development across the United States.
               </p>
             </div>
           </Reveal>
@@ -45,7 +46,6 @@ export function MarketsSection() {
                 aria-hidden
               />
 
-              {/* Stylized map placeholder */}
               <div
                 className="relative mx-auto aspect-[4/3] max-w-md"
                 aria-hidden
@@ -68,7 +68,7 @@ export function MarketsSection() {
               </div>
 
               <p className="relative mt-6 text-center text-xs uppercase tracking-[0.18em] text-white/50">
-                Active market coverage — illustrative
+                Active small bay markets — illustrative
               </p>
             </div>
           </Reveal>

@@ -11,16 +11,16 @@ export function Testimonials() {
       <div className="container-industrial">
         <Reveal>
           <SectionHeading
-            eyebrow="Client Perspective"
-            title="Trusted by Industrial Leaders"
-            description="Enterprise operators and developers rely on disciplined planning, transparent preconstruction, and field execution aligned with operational goals."
+            eyebrow="In The News"
+            title="Recognition & Industry Coverage"
+            description="Flex Parks USA and our team have been featured in industry publications and recognized for expertise in small bay industrial and flex space real estate."
             align="center"
             className="mx-auto"
           />
         </Reveal>
 
         <p className="mx-auto mt-6 max-w-xl text-center text-xs font-medium uppercase tracking-[0.16em] text-slate-industrial">
-          Testimonials shown are fictional demo content.
+          Coverage sourced from public recognition and industry press.
         </p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
